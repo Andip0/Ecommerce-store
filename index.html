@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub - Premium Electronics Store</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">TechHub</span>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="cart.html" class="nav-link">Cart</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="cart.html" class="cart-icon-link">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Electronics at Your Fingertips</h1>
+            <p class="hero-subtitle">Discover cutting-edge technology with unbeatable prices and quality</p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                <a href="#featured" class="btn btn-secondary">View Collection</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-badge">Up to 40% OFF</div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Handpicked deals just for you</p>
+            </div>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+            <div class="section-footer">
+                <a href="shop.html" class="btn btn-outline">View All Products →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">Free Shipping</h3>
+                    <p class="feature-text">On orders over $50</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Secure Payment</h3>
+                    <p class="feature-text">100% protected transactions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">↩️</div>
+                    <h3 class="feature-title">Easy Returns</h3>
+                    <p class="feature-text">30-day return policy</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-text">Dedicated customer service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About TechHub</h2>
+                    <p>We're passionate about bringing you the latest and greatest in technology. From cutting-edge smartphones to powerful laptops and smart home devices, we curate only the best products for tech enthusiasts.</p>
+                    <p>Founded in 2020, TechHub has grown to become a trusted destination for electronics shopping, serving thousands of satisfied customers worldwide.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Products</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Brands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Your Name" id="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your Email" id="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="5" placeholder="Your Message" id="contactMessage" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <h4>Address</h4>
+                            <p>123 Tech Street, Silicon Valley, CA 94025</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>support@techhub.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">TechHub</h4>
+                    <p class="footer-text">Your trusted destination for premium electronics and tech gadgets.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="shop.html" class="footer-link">Shop</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Categories</h4>
+                    <a href="shop.html?category=smartphones" class="footer-link">Smartphones</a>
+                    <a href="shop.html?category=laptops" class="footer-link">Laptops</a>
+                    <a href="shop.html?category=audio" class="footer-link">Audio</a>
+                    <a href="shop.html?category=accessories" class="footer-link">Accessories</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Customer Service</h4>
+                    <a href="#" class="footer-link">Shipping Info</a>
+                    <a href="#" class="footer-link">Returns</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Product details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

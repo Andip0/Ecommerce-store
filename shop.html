@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - TechHub</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit;">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">TechHub</span>
+                </a>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="cart.html" class="nav-link">Cart</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="cart.html" class="cart-icon-link">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">All Products</h1>
+                <p class="section-subtitle">Discover our complete collection of premium electronics</p>
+            </div>
+
+            <!-- Filters Section -->
+            <div class="filters-section">
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label for="shopSearch">Search</label>
+                        <input 
+                            type="text" 
+                            id="shopSearch" 
+                            class="form-input" 
+                            placeholder="Search products..."
+                            style="padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px; background-color: var(--background); color: var(--text-primary);">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="categoryFilter">Category</label>
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <option value="smartphones">Smartphones</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="tablets">Tablets</option>
+                            <option value="audio">Audio</option>
+                            <option value="wearables">Wearables</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="priceFilter">Price Range</label>
+                        <select id="priceFilter" class="filter-select">
+                            <option value="all">All Prices</option>
+                            <option value="under-100">Under $100</option>
+                            <option value="100-500">$100 - $500</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="over-1000">Over $1000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sortFilter">Sort By</label>
+                        <select id="sortFilter" class="filter-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                            <option value="name">Name: A-Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsContainer">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">TechHub</h4>
+                    <p class="footer-text">Your trusted destination for premium electronics and tech gadgets.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="shop.html" class="footer-link">Shop</a>
+                    <a href="index.html#about" class="footer-link">About</a>
+                    <a href="index.html#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Categories</h4>
+                    <a href="shop.html?category=smartphones" class="footer-link">Smartphones</a>
+                    <a href="shop.html?category=laptops" class="footer-link">Laptops</a>
+                    <a href="shop.html?category=audio" class="footer-link">Audio</a>
+                    <a href="shop.html?category=accessories" class="footer-link">Accessories</a>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Customer Service</h4>
+                    <a href="#" class="footer-link">Shipping Info</a>
+                    <a href="#" class="footer-link">Returns</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Product details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
