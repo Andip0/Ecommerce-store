@@ -1,4 +1,3 @@
-/* ===== CSS RESET & BASE STYLES ===== */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
 }
 
 :root {
-    /* Light Mode Colors */
     --primary-color: #6366f1;
     --primary-dark: #4f46e5;
     --primary-light: #818cf8;
@@ -52,7 +50,6 @@ body {
     padding: 0 20px;
 }
 
-/* ===== NAVIGATION ===== */
 .navbar {
     background-color: var(--background);
     border-bottom: 1px solid var(--border-color);
@@ -217,7 +214,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* ===== BUTTONS ===== */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -263,7 +259,6 @@ body {
     color: var(--primary-color);
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     padding: 6rem 2rem;
@@ -334,7 +329,6 @@ body {
     }
 }
 
-/* ===== PRODUCTS GRID ===== */
 .featured-section,
 .products-section {
     padding: 4rem 0;
@@ -498,7 +492,6 @@ body {
     margin-top: 2rem;
 }
 
-/* ===== FEATURES SECTION ===== */
 .features-section {
     background-color: var(--background-alt);
     padding: 4rem 0;
@@ -530,7 +523,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* ===== ABOUT SECTION ===== */
 .about-section {
     padding: 4rem 0;
 }
@@ -573,7 +565,6 @@ body {
     font-weight: 500;
 }
 
-/* ===== CONTACT SECTION ===== */
 .contact-section {
     padding: 4rem 0;
     background-color: var(--background-alt);
@@ -638,7 +629,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* ===== FOOTER ===== */
 .footer {
     background-color: var(--background-alt);
     border-top: 1px solid var(--border-color);
@@ -682,7 +672,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* ===== MODAL ===== */
 .modal {
     display: none;
     position: fixed;
@@ -738,7 +727,6 @@ body {
     padding: 2rem;
 }
 
-/* ===== TOAST NOTIFICATION ===== */
 .toast {
     position: fixed;
     bottom: 2rem;
@@ -757,7 +745,6 @@ body {
     transform: translateX(0);
 }
 
-/* ===== CART PAGE STYLES ===== */
 .cart-container {
     padding: 4rem 0;
     min-height: 60vh;
@@ -907,7 +894,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* ===== FILTERS SECTION ===== */
 .filters-section {
     background-color: var(--background-alt);
     padding: 2rem;
@@ -942,9 +928,6 @@ body {
     cursor: pointer;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-
-/* Large tablets and small desktops */
 @media (max-width: 1024px) {
     .hero-title {
         font-size: 2.5rem;
@@ -960,7 +943,6 @@ body {
     }
 }
 
-/* Tablets */
 @media (max-width: 768px) {
     .nav-container {
         padding: 0.75rem 15px;
@@ -1156,7 +1138,6 @@ body {
     }
 }
 
-/* Mobile phones */
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
@@ -1438,7 +1419,6 @@ body {
     }
 }
 
-/* Extra small phones and Z Fold outer screen */
 @media (max-width: 360px) {
     .nav-logo {
         font-size: 1rem;
